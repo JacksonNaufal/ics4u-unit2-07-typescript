@@ -10,7 +10,6 @@
 import Biplane from './Biplane'
 
 class Boeing extends Biplane {
-
   // this sets the speed
   setSpeed(newSpeed: number): void {
     super.setSpeed(newSpeed * 2)
@@ -21,7 +20,6 @@ class Boeing extends Biplane {
     super.setSpeed(super.getSpeed() * 2)
   }
 
-
-// exports file back to main
+  // exports file back to main
 }
 export = Boeing

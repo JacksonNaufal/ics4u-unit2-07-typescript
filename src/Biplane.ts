@@ -8,14 +8,12 @@
  */
 
 class Biplane {
-
   // protected variable used between classes
   protected speed = 0
 
-
   // sets the speed (setter)
   setSpeed(newSpeed: number): void {
-      this.speed = newSpeed
+    this.speed = newSpeed
   }
 
   // sets the speed (getter0
@@ -23,6 +21,6 @@ class Biplane {
     return this.speed
   }
 }
- 
+
 // exports file back to main
 export = Biplane
