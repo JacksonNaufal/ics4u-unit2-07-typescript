@@ -10,7 +10,7 @@
 import Vehicle from './Vehicle'
 
 class Truck extends Vehicle {
-  // this sets the speed 
+  // this sets the speed
   private licensePlate: string
 
   constructor(color: string, licensePlate: string, maxSpeed: number) {
@@ -20,31 +20,29 @@ class Truck extends Vehicle {
 
   getLicensePlate(): string {
     return this.licensePlate
-   }
+  }
 
   setLicensePlate(licensePlateNew: string): void {
     this.licensePlate = licensePlateNew
   }
 
   provideAir(airPressure: number): void {
-      super.setSpeed(super.getSpeed() - airPressure / 2)
+    super.setSpeed(super.getSpeed() - airPressure / 2)
 
-      if (super.getSpeed() < 0) {
-              super.setSpeed(0)
-      }
+    if (super.getSpeed() < 0) {
+      super.setSpeed(0)
     }
+  }
 
-    status(): void {
-     console.log(`
+  status(): void {
+    console.log(`
      ---> Speed: ${super.getSpeed()}
      ---> MaxSpeed: ${super.getMaxSpeed()}
      ---> Color: ${super.getColor()}
      ---> License Plate: ${this.licensePlate}
     `)
-    }
-
+  }
 }
 
-
-  // exports file back to main
+// exports file back to main
 export = Truck

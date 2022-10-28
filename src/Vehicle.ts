@@ -9,49 +9,49 @@
 
 class Vehicle {
   // protected variable used between classes
-      private speed = 0
-      private color: string
-      private readonly maxSpeed: number
+  private speed = 0
+  private color: string
+  private readonly maxSpeed: number
 
-    constructor(color: string, maxSpeed: number) {
-       this.color = color
-       this.maxSpeed = maxSpeed
-    }
+  constructor(color: string, maxSpeed: number) {
+    this.color = color
+    this.maxSpeed = maxSpeed
+  }
 
-    getColor(): string {
+  getColor(): string {
     return this.color
-    }
+  }
 
-    setColor(newColor: string) {
+  setColor(newColor: string) {
     this.color = newColor
-    }
+  }
 
-    setSpeed(newSpeed: number): void {
-     this.speed = newSpeed
-    }
-    getSpeed(): number {
-     return this.speed
-    }
+  setSpeed(newSpeed: number): void {
+    this.speed = newSpeed
+  }
+  getSpeed(): number {
+    return this.speed
+  }
 
-    getMaxSpeed(): number {
+  getMaxSpeed(): number {
     return this.maxSpeed
+  }
+
+  accelerate(accelerationPower: number, accelerationTime: number): void {
+    this.speed = accelerationPower * accelerationTime + this.speed
+
+    if (this.speed > this.maxSpeed) {
+      this.speed = this.maxSpeed
     }
+  }
 
-    accelerate(accelerationPower: number, accelerationTime: number): void {
-        this.speed = accelerationPower * accelerationTime + this.speed
+  brake(breakPower: number, breakTime: number): void {
+    this.speed = this.speed - breakPower * breakTime
 
-        if (this.speed > this.maxSpeed) {
-            this.speed = this.maxSpeed
-        }
+    if (this.speed < 0) {
+      this.speed = 0
     }
-
-    brake(breakPower: number, breakTime: number): void {
-         this.speed = this.speed - breakPower * breakTime
-
-         if (this.speed < 0) {
-                 this.speed = 0 
-         }
-    }
+  }
 }
 
 // exports file back to main

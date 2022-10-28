@@ -10,7 +10,6 @@
 import Vehicle from './Vehicle'
 
 class Bike extends Vehicle {
-
   private cadence = 0
   // this sets the speed
   getCadence(): number {
@@ -23,7 +22,7 @@ class Bike extends Vehicle {
   }
 
   ringBell(): void {
-    console.log("\nDing ding!")
+    console.log('\nDing ding!')
   }
 
   status(): void {
@@ -34,7 +33,7 @@ class Bike extends Vehicle {
     ---> Cadence: ${this.cadence}
     `)
   }
-  
+
   // exports file back to main
 }
 export = Bike
