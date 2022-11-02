@@ -11,6 +11,7 @@ import Vehicle from './Vehicle'
 
 class Bike extends Vehicle {
   private cadence = 0
+
   // this sets the speed
   getCadence(): number {
     return this.cadence
@@ -18,11 +19,12 @@ class Bike extends Vehicle {
 
   // this accelerates the boeing
   accelerate(appliedPower: number): void {
-    super.setSpeed(super.getSpeed() * 2)
+    this.cadence = this.cadence + appliedPower
+    super.setSpeed(this.cadence * 2)
   }
 
   ringBell(): void {
-    console.log('\nDing ding!')
+    console.log('Ding ding!')
   }
 
   status(): void {

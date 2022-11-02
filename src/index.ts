@@ -12,10 +12,10 @@ import Bike from './Bike'
 
 const bmx = new Bike('Red', 40)
 
-console.log('Created Bmx bike.\nStatus:\n')
+console.log('Created Bmx bike.\nStatus:')
 bmx.status()
 
-console.log('Set the cadense to 10\n')
+console.log('Set the cadense to 10')
 bmx.accelerate(10)
 bmx.status()
 
@@ -23,12 +23,12 @@ console.log('\nAccelerate by 15:')
 bmx.accelerate(15)
 bmx.status()
 
-console.log('\nRing bell.')
+console.log('Ring bell.')
 bmx.ringBell()
 
 const bigTruck = new Truck('Grey', 'HGC-3456F', 200)
 
-console.log('Created a Truck.\nStatus:\n')
+console.log('\nCreated a Truck.\nStatus:')
 bigTruck.status()
 
 console.log('\nAccelerating, 10 of power for ten seconds:')
