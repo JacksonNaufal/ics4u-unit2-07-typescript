@@ -13,30 +13,38 @@ class Vehicle {
   private color: string
   private readonly maxSpeed: number
 
+  // This is the constructor for the variables
   constructor(color: string, maxSpeed: number) {
     this.color = color
     this.maxSpeed = maxSpeed
   }
 
+  // This returns the colours
   getColor(): string {
     return this.color
   }
 
+  // this sets the colours
   setColor(newColor: string) {
     this.color = newColor
   }
 
+  // this sets the speed
   setSpeed(newSpeed: number): void {
     this.speed = newSpeed
   }
+
+  // this returns the speed
   getSpeed(): number {
     return this.speed
   }
 
+  // this returns the max speed
   getMaxSpeed(): number {
     return this.maxSpeed
   }
 
+  // this calculates the acceleration
   accelerate(accelerationPower: number, accelerationTime: number): void {
     this.speed = accelerationPower * accelerationTime + this.speed
 
@@ -45,6 +53,7 @@ class Vehicle {
     }
   }
 
+  // this calculates the breaking power
   brake(breakPower: number, breakTime: number): void {
     this.speed = this.speed - breakPower * breakTime
 

@@ -13,19 +13,23 @@ class Truck extends Vehicle {
   // this sets the speed
   private licensePlate: string
 
+  // This gets the variables and the color, licensePlate, and hte max Speed
   constructor(color: string, licensePlate: string, maxSpeed: number) {
     super(color, maxSpeed)
     this.licensePlate = licensePlate
   }
 
+  // this returns the licensePlate
   getLicensePlate(): string {
     return this.licensePlate
   }
 
+  // this sets the licensePlate
   setLicensePlate(licensePlateNew: string): void {
     this.licensePlate = licensePlateNew
   }
 
+  // this is the air pressure function
   provideAir(airPressure: number): void {
     super.setSpeed(super.getSpeed() - airPressure / 2)
 
@@ -34,6 +38,7 @@ class Truck extends Vehicle {
     }
   }
 
+  // this displays the status
   status(): void {
     console.log(`
      ---> Speed: ${super.getSpeed()}

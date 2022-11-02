@@ -23,10 +23,12 @@ class Bike extends Vehicle {
     super.setSpeed(this.cadence * 2)
   }
 
+  // This rings the bell
   ringBell(): void {
     console.log('Ding ding!')
   }
 
+  // This shows the status
   status(): void {
     console.log(`
     ---> Speed: ${super.getSpeed()}
