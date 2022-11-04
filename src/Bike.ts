@@ -30,12 +30,8 @@ class Bike extends Vehicle {
 
   // This shows the status
   status(): void {
-    console.log(`
-    ---> Speed: ${super.getSpeed()}
-    ---> MaxSpeed: ${super.getMaxSpeed()}
-    ---> Color: ${super.getColor()}
-    ---> Cadence: ${this.cadence}
-    `)
+    console.log(super.status())
+    console.log(`---> Cadence: ${this.cadence}`)
   }
 
   // exports file back to main

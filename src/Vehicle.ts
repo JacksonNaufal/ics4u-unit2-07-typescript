@@ -61,6 +61,15 @@ class Vehicle {
       this.speed = 0
     }
   }
+
+   // this displays the status
+  status(): undefined | void {
+    console.log(`
+     ---> Speed: ${this.getSpeed()}
+     ---> MaxSpeed: ${this.getMaxSpeed()}
+     ---> Color: ${this.getColor()}
+    `)
+  }
 }
 
 // exports file back to main

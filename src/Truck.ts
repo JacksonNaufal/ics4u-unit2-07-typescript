@@ -40,14 +40,9 @@ class Truck extends Vehicle {
 
   // this displays the status
   status(): void {
-    console.log(`
-     ---> Speed: ${super.getSpeed()}
-     ---> MaxSpeed: ${super.getMaxSpeed()}
-     ---> Color: ${super.getColor()}
-     ---> License Plate: ${this.licensePlate}
-    `)
+    console.log(super.status())
+    console.log(`---> licensePlate: ${this.licensePlate}`)
   }
 }
-
 // exports file back to main
 export = Truck
