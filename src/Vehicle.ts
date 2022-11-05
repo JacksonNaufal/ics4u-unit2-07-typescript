@@ -63,7 +63,7 @@ class Vehicle {
   }
 
    // this displays the status
-  status(): undefined | void {
+  status(): void {
     console.log(`
      ---> Speed: ${this.getSpeed()}
      ---> MaxSpeed: ${this.getMaxSpeed()}

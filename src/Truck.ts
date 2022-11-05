@@ -40,7 +40,7 @@ class Truck extends Vehicle {
 
   // this displays the status
   status(): void {
-    console.log(super.status())
+    super.status()
     console.log(`---> licensePlate: ${this.licensePlate}`)
   }
 }

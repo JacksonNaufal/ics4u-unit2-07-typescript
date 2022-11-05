@@ -30,7 +30,7 @@ class Bike extends Vehicle {
 
   // This shows the status
   status(): void {
-    console.log(super.status())
+    super.status()
     console.log(`---> Cadence: ${this.cadence}`)
   }
 
