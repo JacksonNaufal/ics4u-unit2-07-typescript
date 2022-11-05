@@ -62,7 +62,7 @@ class Vehicle {
     }
   }
 
-   // this displays the status
+  // this displays the status
   status(): void {
     console.log(`
      ---> Speed: ${this.getSpeed()}
